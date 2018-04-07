@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+$gray: #dfe4ea;
+$border-radius: 20px;
+
+
+body {background-color: $gray; font-size: 16px; font-family: Nunito}
+
+#mariam { display: flex; align-items: center; flex-flow: column; justify-content: center; height: 100vh;
+
+	.container { padding: 30px; max-width: 250px; width: 100%;
+		background-color: #fff; border-radius: 20px; box-shadow: 0 0 10px 0 darken($gray, 5);
+		
+		.title {margin-bottom: 26px; font-size: 22px; color: darken($gray, 20)}
+
+		.message {float: right; padding: 5px 20px; margin: 5px 0; border-radius: $border-radius; display: block; clear: both;
+			font-size: 13px; background-color: $gray}
+		.message.bot {float: left; background-color: #ff6b81; color: #fff}
+
+		.input {}
+	}
+
+}
