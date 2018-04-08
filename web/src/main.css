@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+.blue {
+  color: #70a1ff; }
+
 body {
   background-color: #dfe4ea;
-  background-image: url("/stc/img/bg.png");
+  background-image: url("/src/img/bg.png");
+  background-size: cover;
   font-size: 16px;
-  font-family: Varela Round;
+  font-family: Varela Round !important;
   color: #2f3542; }
+
+h1 {
+  font-size: 36px; }
 
 h1, h2, h3, h4, h5, h5 {
   font-weight: 400; }
@@ -13,21 +20,23 @@ h1, h2, h3, h4, h5, h5 {
   clear: both; }
 
 #mariam {
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  justify-content: center;
   height: 100%;
-  max-height: 100vh; }
+  max-height: 100vh;
+  text-align: center; }
   #mariam > * {
     transition: all 1s ease; }
   #mariam h1.hodl {
     font-size: 40px;
     color: #2f3542; }
+  #mariam .chatting {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   #mariam .chatbox {
     max-width: 300px;
     width: 100%;
     position: relative;
+    text-align: left;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 #d0d7e0; }
@@ -49,16 +58,18 @@ h1, h2, h3, h4, h5, h5 {
       box-shadow: -5px -5px 10px 0 #dfe4ea;
       background-position: center; }
     #mariam .chatbox .container {
-      margin: 10px 20px;
+      margin: 20px 5px;
       font-size: 20px; }
     #mariam .chatbox .title {
       margin-bottom: 50px;
+      padding-left: 20px;
       font-size: 22px;
       color: #a1b0c2; }
     #mariam .chatbox .messages {
       height: 150px;
       overflow: scroll;
-      margin-bottom: 70px; }
+      margin-bottom: 70px;
+      padding: 20px; }
     #mariam .chatbox .message {
       float: right;
       padding: 5px 20px;
@@ -82,6 +93,7 @@ h1, h2, h3, h4, h5, h5 {
       box-sizing: border-box;
       padding: 20px;
       width: calc(100% - 10px);
+      left: 0;
       color: #50637a;
       border: 0;
       border-radius: 5px 5px 20px 20px;
@@ -89,6 +101,48 @@ h1, h2, h3, h4, h5, h5 {
       background-color: #e5e9ee; }
     #mariam .chatbox input[type=submit] {
       display: none; }
+  #mariam section.kyc {
+    padding: 50px 0; }
+    #mariam section.kyc .loading {
+      padding: 100px 0;
+      display: none; }
+      #mariam section.kyc .loading p {
+        font-size: 26px; }
+      #mariam section.kyc .loading img {
+        width: 50px;
+        height: auto; }
+    #mariam section.kyc .result {
+      padding: 100px 0;
+      display: none; }
+      #mariam section.kyc .result .amount {
+        font-size: 50px; }
+  #mariam form.kyc {
+    margin: 25px auto;
+    max-width: 320px;
+    width: 100%; }
+    #mariam form.kyc input, #mariam form.kyc textarea, #mariam form.kyc select {
+      padding: 10px 15px;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 15px 0;
+      background-color: #fff;
+      border-radius: 2px;
+      outline: none;
+      border: 0;
+      font-size: 16px;
+      color: #888; }
+    #mariam form.kyc .facebook {
+      width: 200px;
+      height: auto;
+      margin: 10px 0;
+      cursor: pointer; }
+    #mariam form.kyc [type="submit"] {
+      width: 100px;
+      border-radius: 20px;
+      background-color: #70a1ff;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase; }
 
 .ss-wrapper {
   overflow: hidden;

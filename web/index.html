@@ -3,33 +3,95 @@
 	<title>ezUdhar</title>
 	<!-- <script type="text/javascript" src="src/jquery-3.3.1.min.js"></script> -->
 	<script type="text/javascript" src="src/bundle.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="src/main.css"></link>
 	<!-- <link rel="stylesheet" type="text/cs/s" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"></link> -->
 </head>
 <body>
 
 	<section id="mariam" data-state="intro">
+		
+		<img src="/src/img/logo-dark.png" alt="" class="logo">
 
-		<h1 class="hodl">Let's get you your loan</h1>
+		<h1 class="hodl">Let's get you your loan!</h1>
 		<br><br><br>
 
-		<div class="chatbox min">
-			<div class="photo"></div>
-			<div class="container">
-				<p class="message template"></p>
-				<div class="title">Chat with Sarah</div>
+		<div class="chatting">
+			<div class="chatbox">
+				<div class="photo"></div>
+				<div class="container">
+					<p class="message template"></p>
+					<div class="title">Chat with Sarah</div>
 
-				<div class="messages">
-					<p class="message bot">Hello! How's your day going?</p>
-					<p class="message">Hi.</p>
-					<div class="clr"></div>
+					<div class="messages">
+						<p class="message bot">Hello! How's your day going?</p>
+						<p class="message">Hi.</p>
+						<div class="clr"></div>
+					</div>
 				</div>
+				<form class="chat" action="">
+					<input type="text" class="box">
+					<input type="submit">
+				</form>
 			</div>
-			<form class="chat" action="">
-				<input type="text" class="box">
-				<input type="submit">
-			</form>
 		</div>
+		
+
+		<section class="kyc">
+			
+			<div class="loading">
+				<img src="http://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt="">
+				<p>Analysing your information...</p>
+			</div>
+
+			<form class="kyc" action="">
+
+				<h1 class="">Introduce Yourself</h1>
+
+				<input name="salary" type="number" placeholder="Monthly Salary" required>
+				<input name="cnic" type="text" placeholder="CNIC">
+				<select name="marital" placeholder="Marital Status">
+					<option value="">Marital Status</option>
+					<option value="single">Single</option>
+					<option value="married">Married</option>
+					<option value="divorced">Divorced</option>
+				</select>
+				<select name="degree" placeholder="Terminal Degree">
+					<option value="">Terminal Degree</option>
+					<option value="inter">Intermediate</option>
+					<option value="diploma">Diploma</option>
+					<option value="bs">Bachelor's</option>
+					<option value="ms">Post Graduate</option>
+					<option value="phd">Doctorate</option>
+				</select>
+				<input  type="number" placeholder="Personal Contact">
+
+<!-- 				<select type="number" placeholder="Loan Range">
+					<option value="" default>Loan Range</option>
+					<option value="5-10">5K - 10K</option>
+					<option value="10-50">10K - 50K</option>
+					<option value="50-200">50K - 200K</option>
+					<option value="200-300">200K - 300K</option>
+					<option value="300-400">300K - 400K</option>
+				</select> -->
+				
+				<input name="installments" type="number" placeholder="Monthly Installments">
+
+				<img class="facebook" src="/src/img/facebook.png" alt="">
+
+				<br>
+
+				<input type="submit"></input>
+			</form>
+
+			<div class="result">
+				<h1 class="">Congratulations!</h1>
+				<h2 class="yes">You are eligible for a loan of upto <br><strong><span class="blue amount"></span></strong> with <span class="markup"></span> Markup</h2>
+				<h2 class="no">You are not eligible for a loan at the moment. <br> Consult Sarah on how you can improve your profile!</h2>
+			</div>
+
+		</section>
+		
 	</section>
 
 </body>
