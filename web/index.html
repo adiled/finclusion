@@ -1,25 +1,34 @@
 <html>
 <head>
-	<title>Knom</title>
+	<title>ezUdhar</title>
+	<!-- <script type="text/javascript" src="src/jquery-3.3.1.min.js"></script> -->
 	<script type="text/javascript" src="src/bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="src/main.css"></link>
+	<!-- <link rel="stylesheet" type="text/cs/s" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"></link> -->
 </head>
 <body>
 
-	<section id="mariam">
-	
-		<h1>Let&apos;s get you your loan</h1>
+	<section id="mariam" data-state="intro">
+
+		<h1 class="hodl">Let's get you your loan</h1>
 		<br><br><br>
 
-		<div class="chatbox">
+		<div class="chatbox min">
 			<div class="photo"></div>
 			<div class="container">
-				<div class="title">Chat with Mariam</div>
-				<p class="message bot">Kia hal hain larke</p>
-				<p class="message">Bilkul thek tum sunao...</p>
-				<div class="clr"></div>
+				<p class="message template"></p>
+				<div class="title">Chat with Sarah</div>
+
+				<div class="messages">
+					<p class="message bot">Hello! How's your day going?</p>
+					<p class="message">Hi.</p>
+					<div class="clr"></div>
+				</div>
 			</div>
-			<input type="text" class="input">
+			<form class="chat" action="">
+				<input type="text" class="box">
+				<input type="submit">
+			</form>
 		</div>
 	</section>
 
