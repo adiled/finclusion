@@ -1,5 +1,5 @@
 {
-  "name": "halka-boilerplate",
+  "name": "finclusion",
   "version": "1.0.0",
   "description": "Build System using NPM Scripts, Browserify and BrowserSync",
   "main": "index.js",
